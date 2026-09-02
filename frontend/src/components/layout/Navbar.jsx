@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Crown, Heart, ShieldCheck } from "lucide-react";
 import "./Navbar.css";
 
@@ -6,7 +6,6 @@ export default function Navbar() {
   return (
     <header className="header">
       <div className="header-container">
-
         <Link to="/" className="logo">
           <div className="logo-circle">
             <div className="logo-inner">
@@ -21,17 +20,32 @@ export default function Navbar() {
         </Link>
 
         <nav className="nav">
-          <Link to="/" className="nav-link active">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
             Accueil
-          </Link>
+          </NavLink>
 
-          <Link to="/categories" className="nav-link">
+          <NavLink
+            to="/categories"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
             Catégories
-          </Link>
+          </NavLink>
 
-          <Link to="/reservation" className="nav-link">
+          <NavLink
+            to="/reservation"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
             Réservation
-          </Link>
+          </NavLink>
         </nav>
 
         <div className="actions">
@@ -45,7 +59,6 @@ export default function Navbar() {
             <span>Admin</span>
           </Link>
         </div>
-
       </div>
     </header>
   );
