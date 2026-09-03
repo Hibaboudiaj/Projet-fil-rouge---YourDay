@@ -1,8 +1,6 @@
-import Hero from "./Hero";
-import "./Hero.css";
+import Hero from "../components/common/Hero";
 
-import About from "./About";
-import "./About.css";
+import About from "../components/common/About";
 
 function Home() {
   return (
