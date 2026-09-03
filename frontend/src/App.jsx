@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/layout/Navbar";
 
-import Home from "./pages/Home";
+import Accueil from "./pages/Accueil";
 import Categories from "./pages/Categories";
 import Contact from "./pages/Contact";
 import Cart from "./pages/Cart";
@@ -17,7 +17,7 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Accueil />} />
         <Route path="/categories" element={<Categories />} />
         <Route path="/reservation" element={<Reservation />} />
         <Route path="/contact" element={<Contact />} />
