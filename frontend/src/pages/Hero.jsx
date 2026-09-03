@@ -1,5 +1,5 @@
 import { Crown, ArrowRight, Star } from "lucide-react";
-import "./Home.css";
+import "./Hero.css";
 
 function Home() {
   return (
