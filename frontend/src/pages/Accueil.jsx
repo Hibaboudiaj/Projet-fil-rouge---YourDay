@@ -1,9 +1,15 @@
-import Hero from "./Hero"
+import Hero from "./Hero";
 import "./Hero.css";
 
+import About from "./About";
+import "./About.css";
+
 function Home() {
-  return(
-    <Hero />
-  )
+  return (
+    <div>
+      <Hero />
+      <About />
+    </div>
+  );
 }
 export default Home;
