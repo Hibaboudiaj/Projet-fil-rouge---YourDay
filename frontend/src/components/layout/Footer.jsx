@@ -1,11 +1,3 @@
-import {
-  Instagram,
-  Facebook,
-  MapPin,
-  Phone,
-  Mail,
-} from "lucide-react";
-
 import "./Footer.css";
 
 function Footer() {
@@ -13,77 +5,121 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
 
-
+        {/* Brand */}
         <div className="footer-brand">
-          <h2>YourDay</h2>
+          <div className="brand-title">
+            <span className="crown">♕</span>
+            <h2>YourDay</h2>
+          </div>
 
           <p>
-            L'excellence du mariage marocain,
-            <br />
-            centralisée en une seule signature.
+            La première plateforme marocaine dédiée à
+            la préparation et l’organisation de mariages
+            traditionnels d’exception. De la Neggafa à la
+            salle de fête, planifiez en fonction de votre
+            budget.
           </p>
 
-          <div className="footer-socials">
-            <a href="#" aria-label="Instagram">
-              <Instagram size={17} />
-            </a>
+          <div className="made-with">
+            ✣ <span>Fait avec amour au Maroc</span> ♥
+          </div>
 
-            <a href="#" aria-label="Facebook">
-              <Facebook size={17} />
-            </a>
+          <div className="socials">
+            <a href="#" aria-label="Instagram">◎</a>
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="YouTube">▶</a>
+            <a href="#" aria-label="Website">◎</a>
           </div>
         </div>
 
-        
+        {/* Navigation */}
         <div className="footer-column">
           <h3>Navigation</h3>
 
-          <a href="/">Accueil</a>
-          <a href="/categories">Catégories</a>
-          <a href="/contact">Contact</a>
-          <a href="/cart">Panier</a>
+          <a href="/">
+            <span>›</span> Accueil
+          </a>
+
+          <a href="/categories">
+            <span>›</span> Les 8 Catégories
+          </a>
+
+          <a href="/cart">
+            <span>›</span> Mon Panier & Sélection
+          </a>
+
+          <a href="/reservation">
+            <span>›</span> Demande de Réservation
+          </a>
         </div>
 
-        
+        {/* Popular services */}
         <div className="footer-column">
-          <h3>Nos catégories</h3>
+          <h3>Prestations Populaires</h3>
 
-          <a href="/categories/neggafa">Neggafa</a>
-          <a href="/categories/salles">Salles de fête</a>
-          <a href="/categories/traiteur">Traiteur</a>
-          <a href="/categories/photographie">Photographie</a>
+          <a href="#">
+            <span>♕</span> Neggafa & Amariya
+          </a>
+
+          <a href="#">
+            <span>✣</span> Hanae & Henné Traditionnel
+          </a>
+
+          <a href="#">
+            <span>♜</span> Salles de Fête & Palais
+          </a>
+
+          <a href="#">
+            <span>◇</span> Caftans & Takchitas
+          </a>
+
+          <a href="#">
+            <span>♢</span> Accessoires & Bijoux
+          </a>
+
+          <a href="#">
+            <span>♜</span> Traiteur Marocain
+          </a>
         </div>
 
-        
+        {/* Contact */}
         <div className="footer-column footer-contact">
-          <h3>Contact</h3>
+          <h3>Villes Couvertes</h3>
+
+          <p className="cities">
+            Casablanca, Marrakech, Fès, Rabat, Tanger, Agadir,
+            Oujda, Meknès et dans tout le Maroc.
+          </p>
 
           <div className="contact-item">
-            <MapPin size={16} />
-            <span>Casablanca, Maroc</span>
+            <span>⌕</span>
+            <p>+212 5 22 00 00 00 / WhatsApp</p>
           </div>
 
           <div className="contact-item">
-            <Phone size={16} />
-            <span>+212 5 22 00 00 00</span>
+            <span>@</span>
+            <p>contact@yourday.ma</p>
           </div>
 
           <div className="contact-item">
-            <Mail size={16} />
-            <span>contact@yourday.ma</span>
+            <span>⌖</span>
+            <p>Bd Zerktouni, Casablanca, Maroc</p>
           </div>
         </div>
+
       </div>
 
-      
+      {/* Bottom */}
       <div className="footer-bottom">
         <p>
           © {new Date().getFullYear()} YourDay. Tous droits réservés.
+          Organisation de mariage traditionnel marocain.
         </p>
 
-        <div className="footer-legal">
+        <div className="footer-links">
+          <a href="#">Conditions d’utilisation</a>
           <a href="#">Politique de confidentialité</a>
-          <a href="#">Conditions d'utilisation</a>
+          <a href="#">Espace Prestataires</a>
         </div>
       </div>
     </footer>

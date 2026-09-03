@@ -10,6 +10,7 @@ import Login from "./pages/Login";
 import AdminDashboard from "./pages/AdminDashboard";
 import Reservation from "./pages/Reservation";
 
+import Footer from "./components/layout/Footer";
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/admin" element={<AdminDashboard />} />
       </Routes>
+
+      <Footer />
     </BrowserRouter>
   );
 }
